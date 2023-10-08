@@ -91,28 +91,30 @@ fs.writeFile(dbPath, JSON.stringify(notes, null, 2), (err) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
   });
 
+  //BONUS, Delete Funtionclity
+  app.delete('/api/notes/:id', (req, res) => {
+    // reading notes form db.json
+    fs.readFile(dbPath, 'utf8', (err, data) => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({error: 'Error Reading database'});
+      }
+    let db = JSON.parse(data);
+    // removing note with id
+    let deleteNotes = db.filter(item => item.id !== req.params.id);
+    // Rewriting note to db.json
+    fs.writeFile(dbPath, JSON.stringify(deleteNotes, null, 2), err => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Error writing to the database' });
+        return;
+    }
+    res.json(deleteNotes);
+  });  
+  });
+});
 
-// app.post('/api/notes', (req, res) => {
 
-//     fs.readFile('./db/db.json', function(err, data) {
-//         if (err) {
-//             throw err
-//         };
-//     let allNote = JSON.parse(data);
-//         let newNote = {
-//             title: req.body.title,
-//             text: req.body.text,
-//             id: shortid.generate()
-//         }
-// allNote.push(newNote);
-// fs.writeFile('./db/db.json', JSON.stringify(allNote,null,2), (err)=> {
-//     if (err) {
-//         throw err
-//     };
-//     res.send('200')
-// })
-//     })
-// });
 
 
 
