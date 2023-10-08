@@ -4,7 +4,7 @@ const path = require('path');
 //const task = require('./db/db.json');
 //const { error } = require('console');
 const shortid = require('shortid')
-const PORT = 3001;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 const dbPath = path.join(__dirname, './db/db.json');
