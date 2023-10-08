@@ -30,3 +30,8 @@ The application can be deployed to a web server using platforms like Heroku, mak
 ![Deployed Site's homepage Screenshot](<Screenshot 2023-10-08 131530.png>)
 ![Deployed Screenshot of new note](Screenshot2.png)
 ![SDeployed Screenshot of saved new note](Screenshot3.png)
+
+## Outside Source
+- Heroku documentation https://devcenter.heroku.com/articles/git
+- Express documentation https://expressjs.com/
+- Tutoring Session
