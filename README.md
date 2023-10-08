@@ -6,7 +6,7 @@ The Note Taker application is a web-based tool that allows users to write, save,
 
 ## Link to the live deployed website (deployed to heroku):
 
-
+https://angelin-notetaker-e2b510156188.herokuapp.com/
 
 ## Features
 
