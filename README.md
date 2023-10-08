@@ -27,3 +27,6 @@ The application can be deployed to a web server using platforms like Heroku, mak
 - Create a new Heroku app: heroku create
 - Deploy application to heroku: git push heroku main
 - Open the deployed application using the provided heroku app URL
+![Deployed Site's homepage Screenshot](<Screenshot 2023-10-08 131530.png>)
+![Deployed Screenshot of new note](Screenshot2.png)
+![SDeployed Screenshot of saved new note](Screenshot3.png)
