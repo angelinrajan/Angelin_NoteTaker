@@ -16,7 +16,7 @@ The Note Taker application is a web-based tool that allows users to write, save,
 
 - **Save Notes**: A Save icon in the navigation bar allows users to save their newly created notes. Once saved, the note appears in the left-hand column with the existing notes. The save icon displays after both title and text for a new note is populated.
 
-- **Delete Notes**: <span style="color: orange;">Although this functionality was a Bonus, when Delete button (red trashcan icon) next to a specific note is clicked, the note is successfully deleted from the application.</span>
+- **Delete Notes**: <font color="orange">Although this functionality was a Bonus, when Delete button (red trashcan icon) next to a specific note is clicked, the note is successfully deleted from the application.</font>
 
 ## Deployment
 
